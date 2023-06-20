@@ -1,4 +1,3 @@
-
 $body-bg-color: #333333;
 $default-text-color: #ffffff;
 $text-color: red;
@@ -8,15 +7,54 @@ body {
   color: $default-text-color;
 }
 
-.header{
+@mixin box-shadow($x, $y, $blur, $c) {
+  -webkit-box-shadow: $x $y $blur $c;
+  -moz-box-shadow: $x $y $blur $c;
+  -ms-box-shadow: $x $y $blur $c;
+  box-shadow: $x $y $blur $c;
+}
+@mixin border-radius($x) {
+  border-radius: ($x);
+}
+
+#awesome {
+  @include box-shadow(0px, 0px, 5px, #eeeeee);
+  @include border-radius(15px);
+}
+
+@mixin border-stroke($val){
+  @if $val == light {
+    border: 1px solid black;
+  }
+  @else if $val == medium {
+    border: 3px solid black;
+  }
+  @else if $val == heavy {
+    border: 6px solid back
+  }
+  @else {
+    border: none;
+  }
+}
+
+#box {
+  margin-top: 10px;
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  @include border-stroke(medium);
+}
+
+.header {
   text-align: center;
 }
-.blog-post, h2 {
+.blog-post,
+h2 {
   color: $text-color;
 }
 
 .blog-post {
-  h1{
+  h1 {
     text-align: center;
     color: blue;
   }
