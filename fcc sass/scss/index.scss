@@ -36,6 +36,9 @@ body {
     border: none;
   }
 }
+@for $j from 1 through 6 {
+  .text-#{$j} {font-size: 15px * $j;}
+}
 
 #box {
   margin-top: 10px;
