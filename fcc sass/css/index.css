@@ -1,3 +1,17 @@
+h3 {
+  text-align: center;
+}
+
+.info, .info-important {
+  width: 200px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.info-important {
+  background-color: magenta;
+}
+
 body {
   background-color: #333333;
   color: #ffffff;
@@ -33,6 +47,31 @@ body {
   font-size: 90px;
 }
 
+.while .ttext-1 {
+  font-size: 7px;
+  color: orange;
+}
+
+.while .ttext-2 {
+  font-size: 14px;
+  color: orange;
+}
+
+.while .ttext-3 {
+  font-size: 21px;
+  color: orange;
+}
+
+.while .ttext-4 {
+  font-size: 28px;
+  color: orange;
+}
+
+.while .ttext-5 {
+  font-size: 35px;
+  color: orange;
+}
+
 #box {
   margin-top: 10px;
   width: 150px;
@@ -48,6 +87,23 @@ body {
 .blog-post,
 h2 {
   color: red;
+}
+
+.blue-bg {
+  background-color: blue;
+}
+
+.black-bg {
+  background-color: black;
+}
+
+.red-bg {
+  background-color: red;
+}
+
+.div {
+  height: 200px;
+  width: 200px;
 }
 
 .blog-post h1 {
