@@ -1,0 +1,20 @@
+body {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.header {
+  text-align: center;
+}
+
+.blog-post, h2 {
+  color: red;
+}
+
+.blog-post h1 {
+  text-align: center;
+  color: blue;
+}
+.blog-post p {
+  font-size: 20px;
+}/*# sourceMappingURL=index.css.map */

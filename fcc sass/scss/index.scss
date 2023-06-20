@@ -1,0 +1,26 @@
+
+$body-bg-color: #333333;
+$default-text-color: #ffffff;
+$text-color: red;
+
+body {
+  background-color: $body-bg-color;
+  color: $default-text-color;
+}
+
+.header{
+  text-align: center;
+}
+.blog-post, h2 {
+  color: $text-color;
+}
+
+.blog-post {
+  h1{
+    text-align: center;
+    color: blue;
+  }
+  p {
+    font-size: 20px;
+  }
+}
