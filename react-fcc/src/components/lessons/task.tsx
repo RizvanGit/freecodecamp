@@ -6,9 +6,9 @@ const Task: FC = () => {
       <h1>This is a block of JSX</h1>
       <p>Here is a subtitle</p>
       <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
       </ul>
     </div>
   )
