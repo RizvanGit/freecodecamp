@@ -1,6 +1,6 @@
 import {FC, Component} from 'react'
 import PropTypes from 'prop-types'
-
+//Require to install "prop-type" library with npm i --save prop-types
 export const Items:FC<{quantity: number}> = (props) => {
     return <h1>Current Quantity of Items in Cart: {props.quantity}</h1>
   };
