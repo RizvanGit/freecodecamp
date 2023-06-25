@@ -7,7 +7,7 @@ const Info: FC = () => {
     return <Card>
         <>
             <h2>Store Info:</h2>
-            <p>{currentStore}</p>
+            <p>{currentStore.logged.toString()}</p>
         </>
     </Card>
 }

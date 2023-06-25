@@ -1,7 +1,10 @@
 import {FC} from 'react'
 import Card from './Card/Card'
+import store from '../store/strore'
 
 const Login: FC = () => {
+    const loginAction = () => ({type: 'LOGIN'})
+    store.dispatch(loginAction())
     return <Card>
         <form>
         <div>
