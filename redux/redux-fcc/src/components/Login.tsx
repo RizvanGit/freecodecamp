@@ -1,12 +1,19 @@
-import {FC} from 'react'
+import {FC, FormEvent} from 'react'
 import Card from './Card/Card'
-import store from '../store/strore'
+import store, { ACTIONS_TYPE } from '../store/strore'
+import Info from './Info/Info'
 
 const Login: FC = () => {
-    const loginAction = () => ({type: 'LOGIN'})
-    store.dispatch(loginAction())
+    const loginAction = () => ({type: ACTIONS_TYPE.LOGIN})
+    const logoutAction = () => ({type: ACTIONS_TYPE.LOGOUT})
+    const onSubmit = (e: FormEvent) => {
+        e.preventDefault()
+        console.log('Submitted');
+        
+        store.dispatch(loginAction())
+    }
     return <Card>
-        <form>
+        <form onSubmit={onSubmit}>
         <div>
             <label>Login</label>
             <input type='text' />
@@ -15,9 +22,12 @@ const Login: FC = () => {
             <label>Password</label>
             <input type='text' />
         </div>
-        <button>log in</button>
+        <button type='submit'>log in</button>
     </form>
+        <button>LOGOUT</button>
+        <Info />
     </Card>
+    
 }
 
 export default Login

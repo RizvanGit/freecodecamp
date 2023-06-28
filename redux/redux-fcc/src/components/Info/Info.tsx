@@ -4,6 +4,7 @@ import store from '../../store/strore'
 
 const Info: FC = () => {
     const currentStore = store.getState()
+    console.log('INFO COMPONENT RENDER')
     return <Card>
         <>
             <h2>Store Info:</h2>
